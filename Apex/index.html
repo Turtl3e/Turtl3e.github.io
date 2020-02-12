@@ -1,734 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Apex</title>
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <audio controls class="soundtrack">
-        <source src="music/Soundtrack.mp3" type="audio/mpeg">
+      <source src="music/Soundtrack.mp3" type="audio/mpeg" />
     </audio>
     <header class="hero d-flex justify-content-center align-items-center">
-        <div class="hero__frame">
-            <div class="hero__frame--background d-flex">
-                <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img class="hero__logo" src="img/logo.png" alt="">
-                        <!-- <img src="img/apex-white-icon.svg" alt=""> -->
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center text-center ">
-                        <h1 class="heading-primary display-1">Apex Legends</h1>
-                    </div>
-                </div>
+      <div class="hero__frame">
+        <div class="hero__frame--background d-flex">
+          <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+              <img class="hero__logo" src="img/logo.png" alt="" />
+              <!-- <img src="img/apex-white-icon.svg" alt=""> -->
             </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center text-center ">
+              <h1 class="heading-primary display-1">Apex Legends</h1>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <main class="mt-5">
-        <div class="gamedescription">
-            <div class="divider" width="100vw">
-                <img src="img/apex-embed-divider.svg" alt="" width="100%">
+      <div class="gamedescription">
+        <div class="divider" width="100vw">
+          <img src="img/apex-embed-divider.svg" alt="" width="100%" />
+        </div>
+        <div class="gamedescription__text text-center mt-5 gamedescription-text ">
+          <h2 class="display-4 px-5 mt-5 slideLeft">ŚWIAT, W KTÓRYM WSZYSTKIE CHWYTY SĄ DOZWOLONE</h2>
+          <p class="px-5 mt-5 slideRight">
+            Wojna o Kresy dobiegła końca. Po setkach lat konfliktu pomiędzy Międzygwiezdną Korporacją Przemysłową a
+            Ruchem Oporu, w odległym regionie kosmosu, znanym jako Kresy, w końcu zapanował pokój.
+          </p>
+          <p class="px-5 mt-5 slideLeft">
+            Wyzwolenie miało jednak swoją cenę – opuszczające region siły IMC i Ruchu Oporu zabrały ze sobą wszystko, co
+            miało jakąkolwiek wartość, i zostawiły Kresy w ruinie. Pozbawieni środków do życia i perspektyw mieszkańcy
+            zostali zmuszeni do opuszczenia swoich domów. Co odważniejsi z nich przenieśli się na Odludzie.
+          </p>
+          <p class="px-5 mt-5 slideRight xd">
+            Mianem tym określa się odległy zbiór planet na obrzeżach Kresów, nietknięty przez wojnę i obfity w zasoby
+            oraz możliwości. Dla mieszkańców Odludzia życie ma jednak niewielką wartość, a niebezpieczeństwo czai się na
+            każdym kroku. Niegdyś tutejsi osadnicy, odkrywcy i bandyci spędzali całe życie na niekończącej się walce o
+            władzę. Teraz rozstrzygają swoje spory na Igrzyskach Apex – brutalnych zawodach, w których legendy ze
+            wszystkich zakątków Kresów walczą o pieniądze, sławę i chwałę.
+          </p>
+        </div>
+      </div>
+      <div class="legends mt-5">
+        <div
+          class="legends__picture slideLeft d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <img src="img/apex-white-icon.svg" alt="" />
+          <h1 class="heading-primary px-3 display-1">Poznaj legendy</h1>
+          <p class="h5 px-5">
+            Aby zostac legenda, potrzeba charakteru, talentu i mnostwo szczescia. Wybierz swoja ulubiona postac i
+            dowiedz sie, jak jej unikatowe zdolnosci moga pomoc twojemu oddzialowi.
+          </p>
+          <i class="fas fa-sign-in-alt fa-4x"></i>
+        </div>
+        <div class="legends__grid my-5">
+          <div class="d-flex justify-content-center align-items-center gamedescription-image my-5">
+            <img src="img/apex-embed-divider.svg" width="100%" alt="" />
+          </div>
+          <div class="containers mx-0 d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center ">
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity ">
+                <img src="img/bangalore.png" alt="" />
+                <a href="legendpages/bangalore.html">
+                  <h2>Bangalore</h2>
+                </a>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
+                <img src="img/bloodhound.png" alt="" />
+                <a href="legendpages/bloodhound.html">
+                  <h2>Bloodhound</h2>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-5 col-8 text-center fromOpacity">
+                <img src="img/caustic.png" alt="" />
+                <a href="legendpages/caustic.html">
+                  <h2>Caustic</h2>
+                </a>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity ">
+                <img src="img/gibraltar.png" alt="" />
+                <a href="legendpages/gibraltar.html">
+                  <h2>Gibraltar</h2>
+                </a>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
+                <img src="img/lifeline.png" alt="" />
+                <a href="legendpages/lifeline.html">
+                  <h2>Lifeline</h2>
+                </a>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
+                <div class="cardToFlip-front">
+                  <img src="img/mirage.png" alt="" />
+                  <a href="legendpages/mirage.html">
+                    <h2>Mirrage</h2>
+                  </a>
+                </div>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 offset-1 text-center fromOpacity ">
+                <img src="img/pathfinder.png" alt="" />
+                <a href="legendpages/pathfinder.html">
+                  <h2>Pathfinder</h2>
+                </a>
+              </div>
+              <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
+                <img src="img/wraith.png" alt="" />
+                <a href="legendpages/wraith.html">
+                  <h2>Wraith</h2>
+                </a>
+              </div>
             </div>
-            <div class="gamedescription__text text-center mt-5 gamedescription-text ">
-                <h2 class="display-4 px-5 mt-5 slideLeft">ŚWIAT, W KTÓRYM WSZYSTKIE CHWYTY SĄ DOZWOLONE</h2>
-                <p class="px-5 mt-5 slideRight">Wojna o Kresy dobiegła końca. Po setkach lat konfliktu pomiędzy
-                    Międzygwiezdną
-                    Korporacją
-                    Przemysłową a
-                    Ruchem Oporu, w odległym regionie kosmosu, znanym jako Kresy, w końcu zapanował pokój.
+          </div>
+        </div>
+      </div>
+      <div class="weapons-section mt-5">
+        <div class="weapons-section__hero">
+          <div class="divider" width="100vw">
+            <img src="img/apex-embed-divider.svg" alt="" width="100%" />
+          </div>
+          <h1 class="heading-primary px-3 display-1">Bronie</h1>
+        </div>
+
+        <div class="weapon-container">
+          <div class="weapon-picker">
+            <button type="button" data-weapon-name="pistols" class="weapon-picker__button">Pistols</button>
+            <button type="button" data-weapon-name="shotguns" class="weapon-picker__button">Shotguns</button>
+            <button type="button" data-weapon-name="smgs" class="weapon-picker__button">SMGS</button>
+            <button type="button" data-weapon-name="lmgs" class="weapon-picker__button">LMGS</button>
+            <button type="button" data-weapon-name="snipers" class="weapon-picker__button">Siniper Rifles</button>
+            <button type="button" data-weapon-name="assaluts" class="weapon-picker__button">Assalut Rifles</button>
+          </div>
+          <div class="weapon-show" data-weapon-name="pistols">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>RE-45</h2>
+                <p>Full-Auto Pistol</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  This is a fast shooting pistol that can quickly deal a bunch of damage if you can keep control of the
+                  recoil. It uses light rounds and can hold 15 rounds.
                 </p>
-                <p class="px-5 mt-5 slideLeft">Wyzwolenie miało jednak swoją cenę – opuszczające region siły IMC i Ruchu
-                    Oporu
-                    zabrały ze sobą
-                    wszystko, co miało jakąkolwiek wartość, i zostawiły Kresy w ruinie. Pozbawieni środków do życia i
-                    perspektyw mieszkańcy zostali zmuszeni do opuszczenia swoich domów. Co odważniejsi z nich
-                    przenieśli
-                    się na Odludzie.</p>
-                <p class="px-5 mt-5 slideRight xd">Mianem tym określa się odległy zbiór planet na obrzeżach Kresów,
-                    nietknięty przez
-                    wojnę i obfity w
-                    zasoby oraz możliwości. Dla mieszkańców Odludzia życie ma jednak niewielką wartość, a
-                    niebezpieczeństwo
-                    czai się na każdym kroku. Niegdyś tutejsi osadnicy, odkrywcy i bandyci spędzali całe życie na
-                    niekończącej się walce o władzę. Teraz rozstrzygają swoje spory na Igrzyskach Apex – brutalnych
-                    zawodach, w których legendy ze wszystkich zakątków Kresów walczą o pieniądze, sławę i chwałę.</p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Barrel Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>16</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>11</p>
+              </div>
             </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>P2020</h2>
+                <p>Semi-auto Pistol</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  Pretty standard pistol that is useful at the beginning of the game. It uses light rounds and can hold
+                  10 rounds.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>18</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>12</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Wingman</h2>
+                <p>High powered revolver</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  This is your pretty standard Desert Eagle style of pistol that rewards players with good aim. It uses
+                  heavy rounds and can hold 4 rounds.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Barrel Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>90</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>45</p>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-show" data-weapon-name="shotguns">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>EVA-8 Auto</h2>
+                <p>Full-auto shotgun</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  Like most auto-shotgun this one does less damage, but is a bit more forgiving if your aim is bad
+                  because you can fire off multiple shots quickly.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>90</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>63</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Mastiff</h2>
+                <p>Powerful semi-auto shotgun</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  This thing is extremely powerful and is one of two legendary weapons currently. The interesting part
+                  about this weapon is that rather than your standard cluster of pellets that tend to be in kind of a
+                  circle, this one fires in a horizontal line.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>None</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>288</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>144</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Mozambique</h2>
+                <p>Triple-barrel shotgun pistol</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  The Mozambique Shotgun is a pretty interesting weapon since it's a pistol and a shotgun mashed
+                  together. It uses shotgun shells and can hold three rounds.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>66</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>45</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Peacekeeper</h2>
+                <p>Lever-action shotgun</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>The Peacekeeper is a pretty standard shotgun. It uses shotgun shells and can hold six rounds.</p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Hop-up Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>165</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>110</p>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-show" data-weapon-name="smgs">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Alternator</h2>
+                <p>Twin barrel full-auto SMG.</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  A slower firing SMG that kind of looks like a pistol. It uses light ammo and holds 16 in a magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Barrel Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>19</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>13</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Prowler Burst</h2>
+                <p>5-round burst SMG</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  This basically looks like a P90, but it fires 5-round bursts instead of just quickly firing. It uses
+                  heavy rounds and holds 20 rounds in a magazine giving you 4 total shots before needing to reload.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+                <p>Hop-Up Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>21</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>14</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>R-99</h2>
+                <p>Rapid-fire automatic SMG</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  Pretty standard SMG that fires quickly and does low damage per bullet but is good if you can land all
+                  your shots. This uses light rounds and holds 18 in a magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Barrel Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>18</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-show" data-weapon-name="lmgs">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Devotion</h2>
+                <p>Full-auto energy LMG</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  The Devotion LMG is an energy weapon and speeds up its fire-rate the longer you hold down the trigger.
+                  This gun has surprisingly gotten pretty high praise among players, and the only real draw back being
+                  that energy ammo is hard to find.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Stock Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Hop-Up Attachment Slot</p>
+                <p>Barrel Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>34</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>17</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>M600 Spitfire</h2>
+                <p>3-round burst assault rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  A surprisingly accurate LMG that has a reasonable fire rate and does solid damage. It uses heavy
+                  rounds and holds 35 rounds in a magazine. The reload time which is usually a weakness of this class is
+                  pretty quick.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+                <p>Barrel Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>36</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>18</p>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-show" data-weapon-name="snipers">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>G7 Scout</h2>
+                <p>Semi-auto light sniper rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  The scout does decent damage and you can fire it relatively quickly. This is a versatile sniper and is
+                  good for mid-to-long range. It uses light rounds and holds a 10-round magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Stock Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Barrel Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>60</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>30</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Kraber .50-CAL Sniper</h2>
+                <p>Powerful bolt-action sniper rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  This is the legendary sniper rifle that packs a big punch. If you're looking for that 1-shop
+                  capability then this is that option. This gun comes with 8-rounds, it holds 4 per magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>None</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>250</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>125</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Longbow DMR</h2>
+                <p>Semi-auto sniper rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  More of a standard sniper rifle that uses heavy rounds and packs a pretty big punch. It's also one of
+                  the only weapons that can use five different attachment. It has a 5-round magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Stock Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Barrel Attachment Slot</p>
+                <p>Hop-Up Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>110</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>55</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Triple Take</h2>
+                <p>Triple-barrel sniper rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  This is a weird sniper rifle because when you fire it takes one round but it fires three projectiles.
+                  The projectiles fire in a horizontal line but in a pretty tight grouping. It's possible to hit players
+                  with only a piece of the shot, but this is generally going to happen pretty rarely.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Stock Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Hop-Up Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>138</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>69</p>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-show" data-weapon-name="assaluts">
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Havoc</h2>
+                <p>Full-auto charged energy rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+              <div class="weapon-show__description">
+                <p>
+                  This is a full automatic energy ammo using weapon. It's fairly similar to the Devotion, and can use
+                  the same Turbocharger hop-up
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Stock Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Hop-Up Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>36</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>18</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>Hemlok</h2>
+                <p>3-round burst assault rifle</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  A 3-round burst rifle that can deal quite a bit of damage if you can land your shots. It uses heavy
+                  rounds and holds 18 per magazine
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+                <p>Barrel Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>24</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>18</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>R-301</h2>
+                <p>Full-auto and high accuracy</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  Kind of the bridge between an SMG and an Assault Rifle. It's accurate but it does lower damage due to
+                  it using light ammo. It holds 18-rounds per magazine
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Barrel Attachment Slot</p>
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>28</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>14</p>
+              </div>
+            </div>
+            <div class="weapon-show__one-gun">
+              <div class="weapon-show__title text-center">
+                <h2>VK-47 Flatline</h2>
+                <p>Full-auto with a punch</p>
+                <hr class="weapon-show__hr" />
+              </div>
+
+              <div class="weapon-show__description">
+                <p>
+                  A more standard assault rifle that does strong damage due to the heavy rounds it uses. It holds
+                  20-rounds per magazine.
+                </p>
+              </div>
+              <div class="weapon-show__aviable-slots">
+                <h4>Slots</h4>
+                <hr class="weapon-show__hr weapon-show__hr--right" />
+                <p>Optic Attachment Slot</p>
+                <p>Mag Attachment Slot</p>
+                <p>Stock Attachment Slot</p>
+              </div>
+              <div class="weapon-show__dmg">
+                <h4>DMG</h4>
+                <hr class="weapon-show__hr" />
+                <img src="img/headshot.png" alt="" />
+                <p>32</p>
+                <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="" />
+                <p>16</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="legends mt-5">
-            <div
-                class="legends__picture slideLeft d-flex flex-column justify-content-center align-items-center text-center">
-                <img src="img/apex-white-icon.svg" alt="">
-                <h1 class="heading-primary px-3 display-1">Poznaj legendy</h1>
-                <p class="h5 px-5">Aby zostac legenda, potrzeba charakteru, talentu i mnostwo szczescia. Wybierz swoja
-                    ulubiona postac i dowiedz sie, jak jej unikatowe zdolnosci moga pomoc twojemu oddzialowi.</p>
-                <i class="fas fa-sign-in-alt fa-4x"></i>
-            </div>
-            <div class="legends__grid my-5">
-                <div class="d-flex justify-content-center align-items-center gamedescription-image my-5">
-                    <img src="img/apex-embed-divider.svg" width="100%" alt="">
-                </div>
-                <div class="containers mx-0 d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center align-items-center ">
-
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity ">
-                            <img src="img/bangalore.png" alt="">
-                            <a href="legendpages/bangalore.html">
-                                <h2>Bangalore</h2>
-                            </a>
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
-                            <img src="img/bloodhound.png" alt="">
-                            <a href="legendpages/bloodhound.html">
-                                <h2>Bloodhound</h2>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-5 col-8 text-center fromOpacity">
-                            <img src="img/caustic.png" alt="">
-                            <a href="legendpages/caustic.html">
-                                <h2>Caustic</h2>
-                            </a>
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity ">
-                            <img src="img/gibraltar.png" alt="">
-                            <a href="legendpages/gibraltar.html">
-                                <h2>Gibraltar</h2>
-                            </a>
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
-                            <img src="img/lifeline.png" alt="">
-                            <a href="legendpages/lifeline.html">
-                                <h2>Lifeline</h2>
-                            </a>
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
-                            <div class="cardToFlip-front">
-                                <img src="img/mirage.png" alt="">
-                                <a href="legendpages/mirage.html">
-                                    <h2>Mirrage</h2>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 offset-1 text-center fromOpacity ">
-                            <img src="img/pathfinder.png" alt="">
-                            <a href="legendpages/pathfinder.html">
-                                <h2>Pathfinder</h2>
-                            </a>
-                        </div>
-                        <div class=" col-lg-3 col-md-5 col-8 text-center fromOpacity">
-                            <img src="img/wraith.png" alt="">
-                            <a href="legendpages/wraith.html">
-                                <h2>Wraith</h2>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="weapons-section mt-5">
-            <div class="weapons-section__hero">
-                <div class="divider" width="100vw">
-                    <img src="img/apex-embed-divider.svg" alt="" width="100%">
-                </div>
-                <h1 class="heading-primary px-3 display-1">Bronie</h1>
-            </div>
-
-            <div class="weapon-container">
-                <div class="weapon-picker">
-                    <button type="button" data-weapon-name="pistols" class="weapon-picker__button">Pistols</button>
-                    <button type="button" data-weapon-name="shotguns" class="weapon-picker__button">Shotguns</button>
-                    <button type="button" data-weapon-name="smgs" class="weapon-picker__button">SMGS</button>
-                    <button type="button" data-weapon-name="lmgs" class="weapon-picker__button">LMGS</button>
-                    <button type="button" data-weapon-name="snipers" class="weapon-picker__button">Siniper
-                        Rifles</button>
-                    <button type="button" data-weapon-name="assaluts" class="weapon-picker__button">Assalut
-                        Rifles</button>
-                </div>
-                <div class="weapon-show" data-weapon-name="pistols">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>RE-45</h2>
-                            <p>Full-Auto Pistol</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>This is a fast shooting pistol that can quickly deal a bunch of damage if you can keep
-                                control of the recoil. It uses light rounds and can hold 15 rounds.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Barrel Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>16</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>11</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>P2020</h2>
-                            <p>Semi-auto Pistol</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>Pretty standard pistol that is useful at the beginning of the game. It uses light rounds
-                                and can hold 10 rounds.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>18</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>12</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Wingman</h2>
-                            <p>High powered revolver</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>This is your pretty standard Desert Eagle style of pistol that rewards players with good
-                                aim. It uses heavy rounds and can hold 4 rounds.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Barrel Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>90</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>45</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="weapon-show" data-weapon-name="shotguns">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>EVA-8 Auto</h2>
-                            <p>Full-auto shotgun</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>Like most auto-shotgun this one does less damage, but is a bit more forgiving if your aim
-                                is bad because you can fire off multiple shots quickly.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>90</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>63</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Mastiff </h2>
-                            <p>Powerful semi-auto shotgun</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>This thing is extremely powerful and is one of two legendary weapons currently. The
-                                interesting part about this weapon is that rather than your standard cluster of pellets
-                                that tend to be in kind of a circle, this one fires in a horizontal line. </p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>None</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>288</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>144</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Mozambique</h2>
-                            <p>Triple-barrel shotgun pistol</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>The Mozambique Shotgun is a pretty interesting weapon since it's a pistol and a shotgun
-                                mashed together. It uses shotgun shells and can hold three rounds.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>66</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>45</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Peacekeeper</h2>
-                            <p>Lever-action shotgun</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>The Peacekeeper is a pretty standard shotgun. It uses shotgun shells and can hold six
-                                rounds.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Hop-up Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>165</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>110</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="weapon-show" data-weapon-name="smgs">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Alternator</h2>
-                            <p>Twin barrel full-auto SMG.</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>A slower firing SMG that kind of looks like a pistol. It uses light ammo and holds 16 in
-                                a magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Barrel Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>19</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>13</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Prowler Burst</h2>
-                            <p>5-round burst SMG</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>This basically looks like a P90, but it fires 5-round bursts instead of just quickly
-                                firing. It uses heavy rounds and holds 20 rounds in a magazine giving you 4 total shots
-                                before needing to reload.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                            <p>Hop-Up Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>21</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>14</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>R-99</h2>
-                            <p>Rapid-fire automatic SMG</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>Pretty standard SMG that fires quickly and does low damage per bullet but is good if you
-                                can land all your shots. This uses light rounds and holds 18 in a magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Barrel Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>18</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>12</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="weapon-show" data-weapon-name="lmgs">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Devotion</h2>
-                            <p>Full-auto energy LMG</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>The Devotion LMG is an energy weapon and speeds up its fire-rate the longer you hold down
-                                the trigger. This gun has surprisingly gotten pretty high praise among players, and the
-                                only real draw back being that energy ammo is hard to find.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Stock Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Hop-Up Attachment Slot</p>
-                            <p>Barrel Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>34</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>17</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>M600 Spitfire</h2>
-                            <p>3-round burst assault rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>A surprisingly accurate LMG that has a reasonable fire rate and does solid damage. It
-                                uses heavy rounds and holds 35 rounds in a magazine. The reload time which is usually a
-                                weakness of this class is pretty quick.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                            <p>Barrel Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>36</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>18</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="weapon-show" data-weapon-name="snipers">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>G7 Scout</h2>
-                            <p>Semi-auto light sniper rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>The scout does decent damage and you can fire it relatively quickly. This is a versatile
-                                sniper and is good for mid-to-long range. It uses light rounds and holds a 10-round
-                                magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Stock Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Barrel Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>60</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>30</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Kraber .50-CAL Sniper</h2>
-                            <p>Powerful bolt-action sniper rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>This is the legendary sniper rifle that packs a big punch. If you're looking for that
-                                1-shop capability then this is that option. This gun comes with 8-rounds, it holds 4 per
-                                magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>None</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>250</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>125</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Longbow DMR</h2>
-                            <p>Semi-auto sniper rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>More of a standard sniper rifle that uses heavy rounds and packs a pretty big punch. It's
-                                also one of the only weapons that can use five different attachment. It has a 5-round
-                                magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Stock Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Barrel Attachment Slot</p>
-                            <p>Hop-Up Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>110</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>55</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Triple Take</h2>
-                            <p>Triple-barrel sniper rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>This is a weird sniper rifle because when you fire it takes one round but it fires three
-                                projectiles. The projectiles fire in a horizontal line but in a pretty tight grouping.
-                                It's possible to hit players with only a piece of the shot, but this is generally going
-                                to happen pretty rarely.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Stock Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Hop-Up Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>138</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>69</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="weapon-show" data-weapon-name="assaluts">
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Havoc</h2>
-                            <p>Full-auto charged energy rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-                        <div class="weapon-show__description">
-                            <p>This is a full automatic energy ammo using weapon. It's fairly similar to the Devotion,
-                                and can use the same Turbocharger hop-up</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Stock Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Hop-Up Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>36</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>18</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>Hemlok</h2>
-                            <p>3-round burst assault rifle</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>A 3-round burst rifle that can deal quite a bit of damage if you can land your shots. It
-                                uses heavy rounds and holds 18 per magazine</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                            <p>Barrel Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>24</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>18</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>R-301</h2>
-                            <p>Full-auto and high accuracy</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>Kind of the bridge between an SMG and an Assault Rifle. It's accurate but it does lower
-                                damage due to it using light ammo. It holds 18-rounds per magazine</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Barrel Attachment Slot</p>
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>28</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>14</p>
-                        </div>
-                    </div>
-                    <div class="weapon-show__one-gun">
-                        <div class="weapon-show__title text-center">
-                            <h2>VK-47 Flatline</h2>
-                            <p>Full-auto with a punch</p>
-                            <hr class="weapon-show__hr">
-                        </div>
-
-                        <div class="weapon-show__description">
-                            <p>A more standard assault rifle that does strong damage due to the heavy rounds it uses. It
-                                holds 20-rounds per magazine.</p>
-                        </div>
-                        <div class="weapon-show__aviable-slots">
-                            <h4>Slots</h4>
-                            <hr class="weapon-show__hr weapon-show__hr--right">
-                            <p>Optic Attachment Slot</p>
-                            <p>Mag Attachment Slot</p>
-                            <p>Stock Attachment Slot</p>
-                        </div>
-                        <div class="weapon-show__dmg">
-                            <h4>DMG</h4>
-                            <hr class="weapon-show__hr">
-                            <img src="img/headshot.png" alt="">
-                            <p>32</p>
-                            <img src="img/bodyshot.png" class="weapon-show__dmg--img" alt="">
-                            <p>16</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </main>
     <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script src="main.js"></script>
     <script src="loadingPage.js"></script>
-
-</body>
-
+  </body>
 </html>
