@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
+
+@import "../bootstrap-4.3.1/scss/bootstrap.scss";
+@import "_loadingScreen.scss";
+@import "variables";
+@import "typography";
+//@import "_slick.scss";
+//@import "_slick-theme.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+        overflow-x: hidden;
+    }
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: $background;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    width: 100%;
+
+}
+
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/image.jpg) center no-repeat;
+    background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    height: 130vh;
+    width: 100%;
+    max-width: 100%;
+    filter: saturate(1);
+    border-bottom: 1px solid black;
+    overflow-x: hidden;
+
+    &__frame {
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+
+        &--background {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/image.jpg) center no-repeat;
+            background-attachment: fixed;
+            -moz-background-attachment: fixed;
+            filter: saturate(3);
+            transform: skew(5deg);
+
+            width: 100%;
+
+            &>* {
+                transform: skew(-5deg);
+            }
+        }
+    }
+
+    &__logo {
+        width: 50%;
+        //height: 100%;
+        //PRZENIES NA LG NAPIS BARDZIEJ W LEWO 
+        //Zmniejsz OBRAZ W MEDIA QUERIES GDY Przechodzi na 1 kolumne     
+    }
+}
+
+.gamedescription {
+
+    &__text {
+        max-width: 800px;
+        margin: 0 auto;
+
+        p {
+            font-size: 1.3rem
+        }
+
+        h2 {
+            @include media-breakpoint-down(sm) {
+                font-size: 2rem;
+            }
+
+        }
+    }
+}
+
+.legends {
+
+    &__picture {
+        background: linear-gradient(to right, rgba(165, 161, 161, 0.699), rgba(133, 128, 128, 0.705)), url(../img/apex-embed-legends-lineup.png) no-repeat center center;
+        background-size: contain;
+
+        p {
+            max-width: 900px;
+        }
+
+        & img {
+            padding: 10rem 0px 0px 0px;
+        }
+
+        & .fas {
+            padding: 0rem 0px 9rem 0px;
+            color: white;
+        }
+    }
+
+    &__grid {
+
+        img {
+            width: 100%;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        & .col-lg-3,
+        .col-md-5 {
+            //box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+            //border: 3px solid rgb(255, 38, 0);
+            border-radius: 10px;
+            margin: 5px;
+            background: rgba(121, 117, 116, 0.158);
+            transition: all .3s;
+
+            @include media-breakpoint-up(lg) {
+                margin: 20px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 20px;
+            }
+
+            & a {
+                color: black;
+            }
+
+            & h2 {
+                padding-bottom: 3rem;
+            }
+
+            &:hover {
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+
+
+.bodyLegend {
+    background: $background;
+
+    & .legends-panel {
+        position: fixed;
+        left: 0px;
+        //top: 0;
+        z-index: 222;
+        height: 100vh;
+        width: 15vw;
+        min-width: 17rem;
+        transform: translateX(-250px);
+        background-image: linear-gradient(to right bottom, hsla(0, 4%, 13%, 0.884), rgba(44, 42, 42, 0.897), rgba(53, 51, 52, 0.877), #3e3e3e, #484848, #4d4d4e, #535354, #58585a, #595a5d, #595c60, #585e63, #576066);
+        border-radius: 0 100px 100px 0;
+        transition: all .5s;
+
+        & a {
+            color: black;
+        }
+
+
+        &.active {
+            transform: translateX(0);
+            opacity: .7;
+        }
+
+        &__oneslide {
+            border-bottom: 10px solid black;
+            border-top: 10px solid black;
+
+            & img {
+                width: 70%;
+            }
+        }
+
+        & .draggable {
+            height: 80% !important;
+            width: 90% !important;
+            left: -10%;
+        }
+    }
+}
+
+.slider {
+    height: 100%;
+
+    &__movie {
+        height: 100vh;
+        position: relative;
+    }
+
+    &__video {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        & video {
+            object-fit: cover;
+        }
+
+        &--foreground {
+            background: linear-gradient(164deg, darken(rgba($myViolet, .8), 35%) 0%, rgba(96, 96, 97, 0.9) 60%, darken(rgba($myOrange, .8), 35%) 100%);
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            & h2 {
+                color: rgba(255, 255, 255, 0.767);
+                //font-size: 2.5rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .legend-bcg {
+        background-size: cover !important;
+
+        &--bangalore {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/bangalore/bangalorepic.jpg) no-repeat center center;
+        }
+
+        &--bloodhound {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/bloodhound/bloodhound-pic.jpg) no-repeat center center;
+        }
+
+        &--caustic {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/caustic/caustic-pic.jpg) no-repeat center center;
+        }
+
+        &--gibraltar {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/gibraltar/gibraltar-pic.jpg) no-repeat center center;
+        }
+
+        &--lifeline {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/lifeline/lifeline-pic.jpg) no-repeat center center;
+        }
+
+        &--mirage {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/mirage/mirage-pic.jpg) no-repeat center center;
+        }
+
+        &--pathfinder {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/pathfinder/pathfinder-pic.jpg) no-repeat center center;
+        }
+
+        &--wraith {
+            background: linear-gradient(164deg, rgba(18, 3, 156, 0.74) 0%, rgba(96, 96, 97, 0.9) 60%, rgba(228, 78, 9, 0.74) 100%), url(../img/wraith/wraith-pic.jpg) no-repeat center center;
+        }
+    }
+
+
+    .foreground-info {
+        width: 80%;
+
+        &__text {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 4px rgb(0, 0, 0);
+            font-weight: 700;
+            color: white;
+
+            & span {
+                color: black;
+            }
+        }
+    }
+
+    &__description {
+
+        .description__info {
+            flex-basis: 40%;
+        }
+    }
+
+    &__skills {
+        flex-basis: 40%;
+        margin-top: 2rem;
+
+        & .skill {
+
+            & img {
+                width: 50%;
+                min-width: 300px;
+            }
+        }
+    }
+
+    .slider__banners {
+        .banners-container {
+            width: 100%;
+            //flex-basis: 80%;
+            flex-wrap: wrap;
+            overflow: visible;
+            margin-top: 2rem;
+
+            &__banner {
+                flex-basis: 20%;
+                min-width: 300px;
+                height: 80%;
+                margin: 20px;
+
+                & img {
+                    height: 45vh;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+.weapons-section {
+    //height: 80vh;
+    // background: linear-gradient(164deg, rgba(31, 31, 32, 0.349) 0%, rgba(96, 96, 97, 0.445) 60%), url(../img/apex-section-bg-red-grit-texture-xl.jpg.adapt.1456w.jpg) no-repeat center center;
+    background-size: cover;
+    margin: 5rem 0 5rem 0;
+
+    &__hero {
+        //height: 50vh;
+        //background: linear-gradient(to right, rgba(36, 35, 35, 0.438), rgba(39, 38, 38, 0.712)), url(../img/weapon.jpg) no-repeat center center;
+        //background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .weapon-container {
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 2rem;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            margin: 0;
+            justify-content: center;
+        }
+    }
+
+    & .weapon-picker {
+        width: 30vw;
+        height: 30vw;
+
+        //background: rgba(66, 66, 66, 0.219);
+        background: #343A40;
+        -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-down(lg) {
+            min-width: 400px;
+            min-height: 400px;
+            margin-bottom: 2rem;
+        }
+
+        &__button {
+            width: 40%;
+            padding: .8vw 0;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255, 255, 255, 0.781);
+            color: black;
+            transition: all 0.3s ease 0s;
+            outline: none;
+            //box-shadow: 0px 10px 15px #343A40;
+            box-shadow: 0px 10px 15px #343A40;
+            margin: .7vw 0px;
+
+            @include media-breakpoint-down(lg) {
+                margin: .7rem 0px;
+            }
+
+            &:hover {
+                box-shadow: 0px 15px 20px #343A40;
+                transform: translateY(-4px);
+            }
+        }
+
+    }
+
+    & .weapon-show {
+        width: 70%;
+        //height: 30vw;
+        left: 1.5rem;
+        padding-right: 2rem;
+        //background: rgba(75, 74, 74, 0.247);
+        position: absolute;
+        //-webkit-clip-path: polygon(3% 0, 70% 0%, 100% 0, 100% 100%, 70% 100%, 3% 100%, 15% 70%, 15% 30%);
+        //clip-path: polygon(3% 0, 70% 0%, 100% 0, 100% 100%, 70% 100%, 3% 100%, 15% 70%, 15% 30%);
+        transition: 1s;
+        //padding-left: 12%;
+        transform: translateX(100vw);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+
+        &__one-gun {
+            background: #343A40;
+            max-width: 35%;
+            margin: 1rem;
+            //box-shadow: 0px 10px 15px #343A40;
+            color: white;
+            border-radius: 10px;
+            //border-right: 1px solid rgb(49, 54, 59);
+            //border-bottom: 1px solid rgb(56, 61, 66);
+            box-shadow: 7px 7px 1px 7px rgb(38, 42, 46);
+
+            @media (max-width: 1550.00px) {
+                font-size: 13px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                max-width: 45%;
+                margin: .5rem;
+                margin-bottom: 1rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 60%;
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        &__description {
+            padding: 1rem;
+        }
+
+        &__hr {
+            border-top: 3px solid $myOrange;
+            width: 50%;
+            margin: 0;
+
+            &--right {
+                // margin-left: auto;
+                margin: 0 0 0 auto;
+            }
+        }
+
+        &__aviable-slots :not(hr) {
+            text-align: right;
+            padding-right: .5rem;
+        }
+
+        &__dmg {
+
+            & img {
+                width: 15%;
+                padding: .2rem;
+            }
+
+            &--img {
+                width: 12% !important;
+                margin-left: 1rem;
+                padding: .2rem;
+            }
+
+            p {
+                display: inline;
+            }
+
+            h4 {
+                padding-left: 1rem;
+            }
+        }
+
+
+    }
+
+    & .weapon-show.active {
+        transform: translateX(0);
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+
+    }
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 5;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+.soundtrack {
+    position: fixed;
+    //visibility: hidden;
+    opacity: .6;
+    right: 5px;
+    bottom: 5px;
+    z-index: 100;
+}
+
+.back-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 20;
+    color: white;
+    opacity: .7;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.divider {
+    width: 100vw;
+}
+
+.slideRight {
+    transition: all 1s;
+    display: none;
+    transform: translateX(100vw);
+}
+
+.slideLeft {
+    transition: all 1s;
+    display: none;
+    transform: translateX(-100vw);
+}
+
+.slideRight.active,
+.slideLeft.active,
+.hero__frame.active {
+    transform: translateX(0);
+}
+
+.hero__frame {
+    transition: all 1s;
+    display: none;
+    transform: translateX(100vw);
+}
+
+.fromOpacity {
+    transition: .2s linear;
+    display: none;
+    transform: scale(0);
+}
+
+.fromOpacity.active {
+    transform: scale(1);
+}
+
+.zaslona {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.87);
+    z-index: 100;
+}
